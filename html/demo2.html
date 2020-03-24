@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>dom</title>
+</head>
+
+<body>
+    <div id="div1">
+        <p id="one">你弄啥了</p>
+        <p id="two">我弄啥了</p>
+    </div>
+    <script>
+    document.getElementById("one").innerHTML = "我不弄啥勒！！";
+    document.getElementById("one").style.color = "red";
+    var x = document.createElement("p");
+    var y = document.createTextNode("他是后面加进来的");
+    x.appendChild(y);
+
+    var z = document.getElementById("div1");
+    z.appendChild(x);
+    </script>
+</body>
+
+</html>
+
+<!-- <!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>css样式</title>
+ <style type="text/css">
+  /*p标签样式*/
+	p{font-size:30px;
+	  color:red;
+	  font-family:隶书}
+	h1,h2,h3,h4{font-size:30px;}
+	h1{color:blue;}
+  </style> 
+ <link href="css.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+<h1>css层叠样式</h1>
+<h2>css层叠样式</h2>
+<h3>css层叠样式</h3>
+<h4>css层叠样式</h4>
+<p>用于定义html内容在浏览器中的显示样式</p>
+ <p>行内样式</p>
+ <p>嵌入样式</p>
+ </body>
+</html> -->
+
